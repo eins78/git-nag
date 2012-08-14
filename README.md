@@ -2,7 +2,17 @@
 
 ###### nag people by mail if they have not committed to a git repo recently
     
+---
+
+## Synopsis
+
+    git-nag "/path/to/git/repo" "author@example.com" "4hours"
     
+Enter the git repository, git-pull from the default remote, ask git-log for if 
+someone with the email "author@example.com" has committed anything in the last 4 hours.  
+If no commits were found, send an email saying so to the same email address.
+
+
 ## Installation & Usage
 
 git-nag depends on `nail` to send email. make shure it is installed (or change the script).
